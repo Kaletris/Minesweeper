@@ -17,12 +17,12 @@ Menu jatek_kezdes(int sorszam, int oszlopszam, int aknaszam, Nehezseg nehezseg) 
     Menu visszateres;
     Mezo **tabla = tabla_foglalas(sorszam, oszlopszam);
     tabla_inicializacio(tabla, sorszam, oszlopszam);
-    visszateres = tabla_navigalas(tabla, sorszam, oszlopszam, aknaszam, nehezseg);
+    visszateres = tabla_vezerles(tabla, sorszam, oszlopszam, aknaszam, nehezseg);
     tabla_felszabaditas(tabla, sorszam);
     return visszateres;
 }
 
-Menu tabla_navigalas(Mezo **tabla, int sorszam, int oszlopszam, int aknaszam, Nehezseg nehezseg) {
+Menu tabla_vezerles(Mezo **tabla, int sorszam, int oszlopszam, int aknaszam, Nehezseg nehezseg) {
     econio_clrscr();
     tabla_rajzolas(tabla, sorszam, oszlopszam);
     Koordinata kurzor;

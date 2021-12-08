@@ -12,7 +12,7 @@ void tabla_felszabaditas(Mezo **, int);
 
 void tabla_inicializacio(Mezo **, int, int);
 
-Menu tabla_navigalas(Mezo **, int, int, int, Nehezseg);
+Menu tabla_vezerles(Mezo **tabla, int sorszam, int oszlopszam, int aknaszam, Nehezseg nehezseg);
 
 void tabla_akna_szetszoras(Mezo **, int, int, int, Koordinata);
 
